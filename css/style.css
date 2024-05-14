@@ -1,0 +1,32 @@
+body {
+  background-image: url("../imgs/SpaceBackground.jpg");
+  cursor: none;
+  max-height: 100vh;
+  max-width: 100vw;
+  overflow: hidden;
+}
+
+.spaceship {
+  width: 80px;
+  position: absolute;
+  transform: translate(-50%, -50%);
+  -webkit-transform: translate(-50%, -50%);
+  -moz-transform: translate(-50%, -50%);
+  -ms-transform: translate(-50%, -50%);
+  -o-transform: translate(-50%, -50%);
+}
+.chicken {
+  width: 70px;
+  animation: chicken_move infinite alternate 1s;
+  -webkit-animation: chicken_move infinite alternate 1s;
+}
+@keyframes chicken_move {
+  0% {
+    scale: 0.9;
+    translate: -5px;
+  }
+  100% {
+    scale: 1;
+    translate: 0px;
+  }
+}
